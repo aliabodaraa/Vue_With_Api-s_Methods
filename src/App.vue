@@ -32,6 +32,17 @@ export default {
     },
     toggleReminder(id){
       this.tasks = this.tasks.map((task)=> task.id === id ? {...task, reminder:!task.reminder} : task)
+    },
+    //add method for apiin port 5500 in http://localhost:5500/tasks
+    async fetchTasks(){
+      const res = await fetch('http://localhost:5500/tasks')
+      const data = await res.json()
+      return data
+    },
+    async fetchTask(id){
+      const res = await fetch(`http://localhost:5500/tasks/${id}`)
+      const data = await res.json()
+      return data
     }
   },
   name: 'App',
@@ -40,50 +51,10 @@ export default {
     all_Tasks,
     AddTask,
 },
-    created () {
+   async created () {
       
-      console.log("created App"),
-      this.tasks=[{
-            id:1,
-            name: 'asem',
-            email: 'salemsem@gmail.com',
-            body: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt non alias pariatur et earum nulla cumque sequi iste asperiores facere, voluptatibus, tenetur veniam doloremque accusantium excepturi, odio mollitia numquam ad.',
-            gender: 'male',
-            age:13,
-            date:2022/12/12,
-            picture: 'https://randomuser.me/api/portraits/women/29.jpg',
-            reminder:true,
-      },{
-            id:2,
-            name: 'ahmad',
-            email: 'abodaraahmad@gmail.com',
-            body: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt non alias pariatur et earum nulla cumque sequi iste asperiores facere, voluptatibus, tenetur veniam doloremque accusantium excepturi, odio mollitia numquam ad.',
-            gender: 'male',
-            age:21,
-            date:2022/12/12,
-            picture: 'https://randomuser.me/api/portraits/women/21.jpg',
-            reminder:false,
-      },{
-            id:3,
-            name: 'Thomas',
-            email: 'abodaraThomas@gmail.com',
-            body: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt non alias pariatur et earum nulla cumque sequi iste asperiores facere, voluptatibus, tenetur veniam doloremque accusantium excepturi, odio mollitia numquam ad.',
-            gender: 'male',
-            age:43,
-            date:2022/12/12,
-            picture: 'https://randomuser.me/api/portraits/women/21.jpg',
-            reminder:false,
-      },{
-            id:4, 
-            name: 'locas',
-            email: 'abodaralocas@gmail.com',
-            body: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt non alias pariatur et earum nulla cumque sequi iste asperiores facere, voluptatibus, tenetur veniam doloremque accusantium excepturi, odio mollitia numquam ad.',
-            gender: 'male',
-            age:54,
-            date:2022/12/12,
-            picture: 'https://randomuser.me/api/portraits/women/40.jpg',
-            reminder:false,
-      }]
+      //console.log("created App"),
+      this.tasks= await this.fetshTasks()
   },
 }
 </script>
