@@ -46,11 +46,11 @@
 export default {
   data () {
     return {
-        picture:'',
+        picture:'https://randomuser.me/api/portraits/women/40.jpg',
         email:'email1@gmail.com',
         name:null,
         body:'add task',
-        date:'d',
+        date:'',
         gender:'',
         phone:'',
         age:null,
