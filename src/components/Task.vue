@@ -32,6 +32,10 @@ export default ({
 })
 </script>
 <style scoped>
+.card{
+    max-height: 330px;
+    overflow: auto;
+}
 .fas{
     right: 7px;
     color: red;

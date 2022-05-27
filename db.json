@@ -1,28 +1,6 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "name": "asem",
-      "email": "salemsem@gmail.com",
-      "body": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt non alias pariatur et earum nulla cumque sequi iste asperiores facere, voluptatibus, tenetur veniam doloremque accusantium excepturi, odio mollitia numquam ad.",
-      "gender": "male",
-      "age": 13,
-      "date": "2022 / 12 / 12",
-      "picture": "https://randomuser.me/api/portraits/women/29.jpg",
-      "reminder": true
-    },
-    {
-      "id": 2,
-      "name": "ahmad",
-      "email": "abodaraahmad@gmail.com",
-      "body": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt non alias pariatur et earum nulla cumque sequi iste asperiores facere, voluptatibus, tenetur veniam doloremque accusantium excepturi, odio mollitia numquam ad.",
-      "gender": "male",
-      "age": 21,
-      "date": "2022 / 12 / 12",
-      "picture": "https://randomuser.me/api/portraits/women/21.jpg",
-      "reminder": true
-    },
-    {
       "id": 3,
       "name": "Thomas",
       "email": "abodaraThomas@gmail.com",
@@ -34,28 +12,6 @@
       "reminder": true
     },
     {
-      "id": 4,
-      "name": "locas",
-      "email": "abodaralocas@gmail.com",
-      "body": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt non alias pariatur et earum nulla cumque sequi iste asperiores facere, voluptatibus, tenetur veniam doloremque accusantium excepturi, odio mollitia numquam ad.",
-      "gender": "male",
-      "age": 54,
-      "date": "2022 / 12 / 12",
-      "picture": "https://randomuser.me/api/portraits/women/40.jpg",
-      "reminder": false
-    },
-    {
-      "id": 5,
-      "name": "locas",
-      "email": "abodaralocas@gmail.com",
-      "body": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt non alias pariatur et earum nulla cumque sequi iste asperiores facere, voluptatibus, tenetur veniam doloremque accusantium excepturi, odio mollitia numquam ad.",
-      "gender": "male",
-      "age": 54,
-      "date": "2022 / 12 / 12",
-      "picture": "https://randomuser.me/api/portraits/women/40.jpg",
-      "reminder": false
-    },
-    {
       "id": 6,
       "name": "locas",
       "email": "abodaralocas@gmail.com",
@@ -64,7 +20,7 @@
       "age": 54,
       "date": "2022 / 12 / 12",
       "picture": "https://randomuser.me/api/portraits/women/40.jpg",
-      "reminder": false
+      "reminder": true
     },
     {
       "id": 7,
@@ -121,6 +77,42 @@
       "age": 1,
       "gender": "male",
       "reminder": true
+    },
+    {
+      "id": 57,
+      "picture": "https://randomuser.me/api/portraits/women/40.jpg",
+      "name": null,
+      "email": "email1@gmail.com",
+      "body": "add task",
+      "date": "",
+      "phone": "",
+      "age": null,
+      "gender": "",
+      "reminder": false
+    },
+    {
+      "id": 67,
+      "picture": "https://randomuser.me/api/portraits/women/40.jpg",
+      "name": null,
+      "email": "email1@gmail.com",
+      "body": "add task",
+      "date": "",
+      "phone": "",
+      "age": null,
+      "gender": "",
+      "reminder": false
+    },
+    {
+      "id": 33,
+      "picture": "https://randomuser.me/api/portraits/women/40.jpg",
+      "name": "dasd",
+      "email": "email1@gmail.com",
+      "body": "add task",
+      "date": "",
+      "phone": 32444444444234230,
+      "age": 332,
+      "gender": "",
+      "reminder": false
     }
   ]
 }
